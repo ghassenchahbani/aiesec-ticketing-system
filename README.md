@@ -69,7 +69,7 @@ ticket_management/
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ghassenchahbani/aiesec-ticketing-system.git
 cd ticket_management
 ```
 
@@ -232,7 +232,7 @@ Register a new account at: http://localhost:3000/register
 ### 4. Test Admin Features
 
 1. Login as admin (superuser)
-2. You can see ALL tickets (not just yours)
+2. You can see ALL tickets 
 3. Click on any ticket
 4. Click status buttons: "New", "Under Review", "Resolved"
 5. View status history showing who changed status and when
@@ -361,29 +361,94 @@ Authorization: Bearer <access_token>
 
 ## 🎨 Design Template Source
 
-The UI design was created using:
+### Template Research & Selection
 
-- **Custom CSS3** - All styles written from scratch
-- **Color Palette**:
-  - Primary: `#007bff` (Blue)
-  - Success: `#28a745` (Green)
-  - Warning: `#ffc107` (Yellow)
-  - Danger: `#dc3545` (Red)
-- **Design Inspiration**: Modern ticketing systems (Zendesk, Freshdesk)
-- **Layout**: Responsive grid with flexbox and CSS Grid
-- **Components**: Card-based design with status badges and category pills
+**Evaluated Templates:**
+- **Material Dashboard React** by Creative Tim - https://www.creative-tim.com/product/material-dashboard-react
+  - Modern Material Design
+  - Professional admin template
+  - React-based with MUI components
+- **AdminLTE** - https://adminlte.io/
+  - Popular Bootstrap admin template
+- **CoreUI React** - https://coreui.io/react/
+  - Clean, responsive design
 
-### UI Components
+**Final Implementation:**
+After evaluating templates, I implemented a **custom design** inspired by Material Design principles and modern ticketing platforms for better learning experience and code control.
 
-- Login/Register forms with validation
-- Ticket cards with hover effects
-- Status badges (color-coded)
-- Category pills
-- Modal forms for create/edit
-- Pagination controls
-- Search and filter bars
-- Attachment preview components
-- Status history timeline
+### Design Approach
+
+- **Design System**: Custom CSS3 following Material Design principles
+- **Inspiration Sources**:
+  - Material Dashboard React (color schemes, card layouts)
+  - Zendesk (ticket management interface, status badges)
+  - Freshdesk (form layouts, filters)
+  - Bootstrap components (responsive grid, buttons)
+
+- **Color Palette** (Material Design inspired):
+  - Primary: `#007bff` (Blue) - Actions and links
+  - Success: `#28a745` (Green) - Resolved status
+  - Warning: `#ffc107` (Yellow) - Under Review status  
+  - Danger: `#dc3545` (Red) - Delete actions
+  - Info: `#17a2b8` (Cyan) - New status
+
+- **Layout System**:
+  - CSS Flexbox for navigation and forms
+  - CSS Grid for responsive ticket cards (1-3 columns)
+  - Mobile-first responsive design
+  - Breakpoints: 768px (tablet), 1024px (desktop)
+
+### UI Components Implemented
+
+**Authentication:**
+- Modern login/register forms with glassmorphism effect
+- Input validation with error messages
+- Loading states on submission
+
+**Ticket Management:**
+- Card-based ticket list with hover effects and shadows
+- Color-coded status badges with icons
+- Category pills for visual categorization
+- Search bar with real-time filtering
+- Multi-select filters (category, status)
+- Client-side pagination (6 items per page)
+
+**Ticket Details:**
+- Large card layout for ticket information
+- Inline image preview (auto-resizing)
+- PDF viewer using Google Docs embedded viewer
+- Status history timeline with user attribution
+- Admin action buttons (Edit, Delete, Status Change)
+
+**Additional Components:**
+- Responsive navigation with user menu
+- Loading spinners for async operations
+- Toast notifications for user feedback
+- Modal-style forms for create/edit
+- Error boundary components
+
+### File Structure
+
+All styles are modular and component-specific:
+- `Auth.css` - Login/Register styling
+- `TicketList.css` - Ticket grid and filters
+- `TicketDetail.css` - Ticket details page
+- `TicketForm.css` - Create/Edit forms
+- `index.css` - Global styles and variables
+
+### Responsive Design Features
+
+- **Mobile** (< 768px): Single column layout, hamburger menu
+- **Tablet** (768px - 1024px): Two column ticket grid
+- **Desktop** (> 1024px): Three column ticket grid, full sidebar
+
+### Accessibility
+
+- Semantic HTML5 elements
+- ARIA labels for screen readers
+- Keyboard navigation support
+- High contrast color ratios (WCAG AA compliant)
+- Focus indicators on interactive elements
 
 ## 💬 Testing Chat Integration
 
@@ -537,29 +602,14 @@ For detailed technical documentation, see:
 - ✅ Responsive design
 - ✅ Complete documentation
 
-## 📧 Support
-
-For issues or questions:
-
-- Check troubleshooting section above
-- Review PROJECT_DOCUMENTATION.md
-- Use Tawk.to chat widget in the app
-- Check Django logs in terminal
-- Check browser console (F12) for frontend errors
-
 ## 📄 License
 
 This project is for educational purposes (AIESEC Full-Stack Task).
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Ghassen Chahbani**
 
-- GitHub: [Your GitHub Profile]
-- Email: your.email@example.com
+- GitHub: github.com/ghassenchahbani
+- Email: chahbani.ghassen@esprit.tn
 
----
-
-**Created**: December 2025  
-**Last Updated**: December 13, 2025  
-**Version**: 1.0.0
