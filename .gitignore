@@ -1,0 +1,41 @@
+# Django
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+db.sqlite3
+*.log
+.env
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React
+build/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
