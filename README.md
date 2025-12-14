@@ -2,6 +2,10 @@
 
 A full-stack ticketing system built with Django REST Framework and React Material Dashboard, featuring role-based access control, file uploads, JWT authentication, and live chat.
 
+## 🎥 Demo
+
+**Watch the demo video**: [Google Drive Demo](https://drive.google.com/drive/u/0/folders/1tuOAIXkEOslqKMVbTtcZQld2WdEi413u)
+
 ## 📋 Technologies
 
 - **Backend**: Django 6.0, Django REST Framework, JWT Authentication

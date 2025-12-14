@@ -65,7 +65,7 @@ function Cover() {
 
     try {
       setLoading(true);
-      await register(formData.username, formData.email, formData.password);
+      await register(formData.username, formData.email, formData.password, formData.confirmPassword);
       navigate("/tickets");
     } catch (err) {
       console.error("Registration error:", err);

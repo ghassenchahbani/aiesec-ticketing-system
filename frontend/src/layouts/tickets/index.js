@@ -316,7 +316,7 @@ function Tickets() {
                 <DataTable
                   table={{ columns, rows }}
                   isSorted
-                  entriesPerPage
+                  entriesPerPage={{ defaultValue: 10, entries: [5, 10, 15, 20, 25] }}
                   showTotalEntries
                   noEndBorder
                   canSearch={false}
